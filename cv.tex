@@ -27,7 +27,7 @@
 
 % \section{Objective}
 % To work on a product which solves real problems, preferrably using reliable and suit-
-% able tools. I d love to work in environment where I can not only contribute, but also
+% able tools. I’d love to work in environment where I can not only contribute, but also
 % learn from the team and the products developed.
 
 \section{Education}
@@ -46,7 +46,22 @@ I'm part of the team working on social identity platform, similar to Gigya,
 Janrain and the like.
 
 \begin{itemize} \itemsep -1pt
-\item
+\item As part of the 4-man team, designed and developed social identity
+  and API integration service, which is already in active use by several
+  other projects. The service has been shown to be highly scalable and
+  exhibits stable behavior even under real world stress conditions.
+  The project is still in active development and the main focus right
+  now is providing realtime statistics for 3rd parties.
+\item As an official documentation lead of the aforementioned project,
+  I have written and still maintain official documentation for both external
+  users and the developers team themselves.
+\item Was instrumental in moving the default technology stack choice
+  from PHP and a set of proprietary libraries to Python and established
+  open source libraries, such as Flask, SQLAlchemy, Jinja2, Celery and others.
+  Take active part in teaching Python to other developers and system engineers.
+\item Developed an internal web tool for editing proprietary i18n format.
+  The tool is actively used by both engineering and marketing teams.
+\item Active open-source involvement -- libredis, Flask, Flask-DebugToolBar, etc.
 \end{itemize}
 
 {\bf Senior Software Engineer,} CloudMade \hfill October 2009 -- August 2011\\
@@ -59,17 +74,13 @@ vector servers development. Authorization servers are also
 being supported by me.\\
 
 \begin{itemize} \itemsep -1pt
-\item Designed and implemented latest version of the tile
+\item Designed and implemented revamped version of the tile
   server. Tile server itself supports
   \href{http://developers.cloudmade.com/projects/show/tiles}{tile} and
   \href{http://developers.cloudmade.com/projects/show/static-maps}{staticmaps}
-  services.
-  Tile server uses smart queue messaging control
-  to improve stability and enhance scalability. Cache management system
-  described later also improves cache hit ratio and
-  allows to update tiles seamlessly. Tile server uses
-  Twisted for networking, queue control and infrastructure messaging
-  and Mapnik for rendering.
+  services. Tile server was written in Twisted, enabling support for various
+  networks protocols used and utilized RabbitMQ for deferring tough rendering
+  tasks. Mapnik was used for actual rendering.
   The previous version was an ad hoc mix of C, C++ and Python.
 \item Designed and implemented cache management system, which is
   responsible for updating tiles and staticmaps images in the
@@ -83,19 +94,12 @@ being supported by me.\\
   service is a very important part of
   navigation pack CloudMade provides and is used by many
   mobile applications.
-  Internal architecture doesn't support queuing of the requests, unlike
-  tile server, because doing so have been proved to
-  I'm the principal author of all APIs this service
-  provides. The backend itself is a mix of Pylons
-  and GeoAlchemy (SQLAlchemy for GIS databases).
 \item Developed Python API
   \href{http://developers.cloudmade.com/projects/show/python-lib}{library}
   from scratch,
   which is  used by developers of Java and Ruby
-  libraries as a model to follow. The API is basically a wrap over
-  REST-like HTTP APIs CloudMade provides. The library features simple
-  query builder.
-\item Open-source involvement -- Mapnik
+  libraries as a model to follow.
+\item Active open-source involvement -- Mapnik
   (PostGIS plugin, SRTM plugin,
   Python bindings), occasional patches to CPython.
 \end{itemize}
@@ -108,29 +112,22 @@ also got involved into development of several web-based
 products.\\
 
 \begin{itemize} \itemsep -1pt
-\item Support of 10-year old new MFC application
-  that was used to program embedded devices. The application itself
-  has been supporting different kinds of devices, oldest of which
-  were almost 20 years old. In the core of the application sits
-  sophisticated mainloop, which makes interaction with serial port
-  programmable devices as flawless as it is possible.
-  As the application doesn't use threads, the callback style is
-  used to program actual functionality behind the interface.
-\item Wrote lots of Python and XSLT scripts
-  crunching XML files. Most of these scripts had curses interface +
-  the usual optparse one. One of the hardest things about this was
-  the need to support at least Python 2.2, because most of these scripts
-  were to be run on old Red Hat installations.
+\item Supported 10-year old MFC application, used for programming
+  embedded devices. Written a Python application, using Qt to
+  substitute the older software, but the project was not accepted
+  because of management objections.
+\item Wrote dozens Python and XSLT scripts
+  crunching XML files. Most of these scripts had optional ncurses UI.
 \item Created in-house wrapper of
   \href{http://www.hyperrealm.com/libconfig/}{libconfig} using SWIG for initial
-  implementation and later rewriting it completely using only Python C API, to make
-  the interface less cumbersome. The wrapping itself was never released to
-  opensource, because of management direct objection.
+  implementation and later rewriting it completely using only Python C API.
+  The wrapping library was never released to opensource because of
+  internal company decision.
 \end{itemize}
 
 
 
-{\bf Tier 1/2 Technical Support Engineer,} Telesystems of Ukraine \hfill February 2006 -- July 2007
+{\bf Tech. Support Engineer,} Telesystems of Ukraine \hfill February 2006 -- July 2007
 
 % Tier 1 support
 % Worked as tech. support engineer for local ADSL internet
