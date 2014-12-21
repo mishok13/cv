@@ -19,7 +19,7 @@
 
 \name{Andrii V. Mishkovskyi\\[12pt]} % the \\[12pt] adds a blank line after name
 
-\address{{\bf Address} \\ Mercatorplein 36-K \\ 1056CL, Amsterdam, The Netherlands}
+\address{{\bf Address} \\ Czaar Peterstraat 103B \\ 1018PE, Amsterdam, The Netherlands}
 
 \address{{\bf Contacts} \\ +31 (62) 980-61-41 \\ contact@mishkovskyi.net \\ skype: andriy.mishkovskyy \\ \href{http://mishkovskyi.net}{mishkovskyi.net}}
 
@@ -32,18 +32,45 @@
 
 \section{Education}
 Bachelor of Computer Science, National University of Ukraine ``Kyiv Politechnical Institute'' \\
-2003 -- 2007
+2003 --- 2007
 
 \section{Experience}
 
-{\bf Core Developer} Hyves \hfill September 2011 -- present
+{\bf Software Engineer/Team Lead} Screen6 \hfill March 2013 --- present
 
-Hyves is the second biggest social network in Netherlnads and part of the
-biggest Dutch media corporation Telegraaf Media Groep. Hyves' focus in recent
-years shifted from building social network functionality to end-users to
-providing services to 3rd parties, including other parts of Telegraaf Media Groep.
-I'm part of the team working on social identity platform, similar to Gigya,
-Janrain and the like.
+Screen6 is a young startup attempting to provide advertisers with
+cross-device services. As the first employee and subsequently a team
+lead at Screen6 I am responsible for designing, coding and overlooking
+most of the projects being developed at the company.\\
+
+\begin{itemize} \itemsep -1pt
+\item Led the design and architecture of real-time cross-device
+  analytics dashboard, was involved in all parts of the system. The
+  data pipeline resembles Lambda Architecture and is written in
+  Clojure. Overlooked development of UI part of the dashboard,
+  implemented in Python and CoffeeScript.
+\item Led successful major refactoring of the system, coordinating
+  effort of 3-member team on modularizing code and supporting internal
+  Maven repository. Most of the code was Clojure with some libraries
+  written in Java for convenience and performance reasons.
+\item Currently building a cookie de-duplication service for 3rd party
+  advertising data providers. The system is capable of handling
+  terabytes of advertising data daily and Screen6 has already
+  successfully de-duplicated our clients' data. It's written in
+  Clojure and node.js and is backed by Google's BigQuery service.
+\item Patches and bug reports to various open source projects ---
+  Cascalog, Carmine, Storm, etc.
+\end{itemize}
+
+{\bf Core Developer} Hyves \hfill September 2011 --- February 2013
+
+Hyves at the time was the biggest social network in Netherlands and
+part of the biggest Dutch media corporation Telegraaf Media Groep. At
+the time I've joined them Hyves' focus had shifted from building
+social network functionality to end-users to providing services to 3rd
+parties, including other parts of Telegraaf Media Groep.  I was part of
+the team working on social identity platform, similar to Gigya,
+Janrain and the like.\\
 
 \begin{itemize} \itemsep -1pt
 \item As part of the 4-man team, designed and developed social identity
@@ -51,7 +78,7 @@ Janrain and the like.
   other projects. The service has been shown to be highly scalable and
   exhibits stable behavior even under real world stress conditions.
   The project is still in active development and the main focus right
-  now is providing realtime statistics for 3rd parties.
+  now is providing real-time statistics for 3rd parties.
 \item As an official documentation lead of the aforementioned project,
   I have written and still maintain official documentation for both external
   users and the developers team themselves.
@@ -61,34 +88,33 @@ Janrain and the like.
   Take active part in teaching Python to other developers and system engineers.
 \item Developed an internal web tool for editing proprietary i18n format.
   The tool is actively used by both engineering and marketing teams.
-\item Active open-source involvement -- libredis, Flask-DebugToolBar, rauth, etc.
+\item Active open-source involvement --- libredis, Flask-DebugToolBar, rauth, etc.
 \end{itemize}
 
-{\bf Senior Software Engineer,} CloudMade \hfill October 2009 -- August 2011\\
-{\bf Software Engineer,} CloudMade \hfill August 2008 -- October 2009
+{\bf Senior Software Engineer,} CloudMade \hfill October 2009 --- August 2011\\
+{\bf Software Engineer,} CloudMade \hfill August 2008 --- October 2009
 
-CloudMade is GIS company that uses free
-(``free'' as in ``libre'') data from OpenStreetMap project as
-the base for its services. I'm responsible for tile and
-vector servers development. Authorization servers are also
-being supported by me.\\
+CloudMade is GIS company that uses free (``free'' as in ``libre'')
+data from OpenStreetMap project as the base for its services. I was
+responsible for tile and vector servers development. Authorization
+servers were also being supported by me.\\
 
 \begin{itemize} \itemsep -1pt
 \item Designed and implemented revamped version of the tile
   server. Tile server itself supports
   \href{http://developers.cloudmade.com/projects/show/tiles}{tile} and
   \href{http://developers.cloudmade.com/projects/show/static-maps}{staticmaps}
-  services. Tile server was written in Twisted, enabling support for various
-  networks protocols used and utilized RabbitMQ for deferring tough rendering
-  tasks. Mapnik was used for actual rendering.
-  The previous version was an ad hoc mix of C, C++ and Python.
+  services. Tile server was written in Twisted, enabling support for
+  various networks protocols used and utilized RabbitMQ for deferring
+  tough rendering tasks. Mapnik was used for actual rendering.  The
+  previous version was an ad hoc mix of C, C++ and Python.
 \item Designed and implemented cache management system, which is
   responsible for updating tiles and staticmaps images in the
   background, thus minimizing serve time and overall load on
-  services. The software is written in Python and uses RabbitMQ
-  (with another backend supporting BDB) for the update queue and
-  SimpleDB (interchangable with PostgreSQL or BDB) for storing
-  meta-information about each image re-rendered.
+  services. The software is written in Python and uses RabbitMQ (with
+  another backend supporting BDB) for the update queue and SimpleDB
+  (interchangable with PostgreSQL or BDB) for storing meta-information
+  about each image re-rendered.
 \item Designed and implemented vector maps service.
   \href{http://developers.cloudmade.com/projects/show/vector-stream-server}{Vectormaps}
   service is a very important part of
@@ -99,12 +125,12 @@ being supported by me.\\
   from scratch,
   which is  used by developers of Java and Ruby
   libraries as a model to follow.
-\item Active open-source involvement -- Mapnik
+\item Active open-source involvement --- Mapnik
   (PostGIS plugin, SRTM plugin,
   Python bindings), occasional patches to CPython.
 \end{itemize}
 
-{\bf Software Engineer,} Visonic Ltd. \hfill July 2007 -- August 2008
+{\bf Software Engineer,} Visonic Ltd. \hfill July 2007 --- August 2008
 
 Visonic is an Israel-based manufacturer of security systems.
 I was responsible for supporting legacy desktop software and
@@ -127,7 +153,7 @@ products.\\
 
 
 
-{\bf Tech. Support Engineer,} Telesystems of Ukraine \hfill February 2006 -- July 2007
+{\bf Tech. Support Engineer,} Telesystems of Ukraine \hfill February 2006 --- July 2007
 
 % Tier 1 support
 % Worked as tech. support engineer for local ADSL internet
@@ -135,7 +161,7 @@ products.\\
 
 % \begin{itemize} \itemsep -1pt
 % \item Wrote several Python and shell scripts which
-%   automated recurring tasks -- such as checking network
+%   automated recurring tasks --- such as checking network
 %   interfaces on our routers, adding new user, blocking
 %   specific ports on our internal routing network, etc.
 %   The scripts themselves didn't use anything besides
@@ -144,7 +170,7 @@ products.\\
 % \end{itemize}
 
 
-{\bf Part-time System Administrator,} Strum \hfill August 2005 -- February 2006
+{\bf Part-time System Administrator,} Strum \hfill August 2005 --- February 2006
 
 % Part time systems administrator at small research institution.
 
@@ -158,29 +184,29 @@ products.\\
 
 \section{Skills}
 \begin{tabular}{l p{3in}}
-  Languages: & Python, Clojure, Emacs Lisp \\
-  Libraries: & Flask, Werkzeug, Mapnik, Twisted, werkzeug, GeoAlchemy, lxml, Boost.Python \\
-  Data persistence and messaging systems: & PostgreSQL, PostGIS, MongoDB, RabbitMQ, MySQL, Redis \\
-  Tools: & GNU Emacs, coreutils, git
+  Languages: & Python, Clojure, Emacs Lisp, Rust \\
+  Libraries: & Cascalog, Guava, Flask, Werkzeug, Apache Commons, Cascading \\
+  Persistence: & PostgreSQL, Redis, Google BigQuery, RabbitMQ, Hadoop \\
+  Tools: & GNU Emacs, coreutils, git, Leiningen, fabric, awscli, puppet
 \end{tabular}
 
 \section{Talks, Presentations and Code Sprints}
 
 \begin{itemize}
-\item July 2012 -- Talk ``Diving into Flask (Head On)'' at EuroPython 2012
-\item June 2011 -- Talk ``Making use of OpenStreetMap data with Python'' at EuroPython 2011
-\item March 2011 -- Tutorial ``Building your own tile server using OpenStreetMap'' at PyCon US 2011
-\item September 2010 -- Mapnik Code Sprint \#1 in London
-\item July 2010 -- Lightning talk on GIS-enabled databases at State of the Map 2010
-\item January 2010 -- Talk ``Using Python at CloudMade'' at PyCamp Kyiv 2010
-\item July 2009 -- Presentation of Vector Maps service at State of the Map 2009
-\item May 2009 -- Improvised Mapnik Code Sprint at WhereCamp 2009 unconference
+\item July 2012 --- Talk ``Diving into Flask (Head On)'' at EuroPython 2012
+\item June 2011 --- Talk ``Making use of OpenStreetMap data with Python'' at EuroPython 2011
+\item March 2011 --- Tutorial ``Building your own tile server using OpenStreetMap'' at PyCon US 2011
+\item September 2010 --- Mapnik Code Sprint \#1 in London
+\item July 2010 --- Lightning talk on GIS-enabled databases at State of the Map 2010
+\item January 2010 --- Talk ``Using Python at CloudMade'' at PyCamp Kyiv 2010
+\item July 2009 --- Presentation of Vector Maps service at State of the Map 2009
+\item May 2009 --- Improvised Mapnik Code Sprint at WhereCamp 2009 unconference
 \end{itemize}
 
 \section{Languages}
 \begin{itemize} \itemsep -1pt
-\item Russian, Ukrainian -- native
-\item English -- fluent
+\item Russian, Ukrainian --- native
+\item English --- fluent
 \end{itemize}
 
 \end{resume}
