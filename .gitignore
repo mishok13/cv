@@ -1,2 +1,11 @@
 *.pdf
 *.log
+*.html
+*.4tc
+*.4ct
+*.tmp
+*.lg
+*.css
+*.dvi
+*.idv
+*.xref
