@@ -19,20 +19,20 @@
 
 \name{Andrii V. Mishkovskyi\\[12pt]} % the \\[12pt] adds a blank line after name
 
-\address{{\bf Mailing address} \\ Czaar Peterstraat 103B \\ 1018PE, Amsterdam, The Netherlands}
+\address{{\bf Mailing address} \\ Czaar Peterstraat 103B \\ 1018PE, Amsterdam \\ The Netherlands}
 
 \address{{\bf Contacts} \\ +31 62 980 61 41 \\ contact@mishkovskyi.net \\ \href{https://github.com/mishok13}{mishok13@GitHub}}
 
 \begin{resume}
 
 \section{Summary}
-Experienced developer with 7+ years of experience in various problem
-domains, with deep knowledge of Python and Clojure, experience with
-various RDBMS, NoSQL, distributed computing, messaging systems, cloud
-computing platforms, etc. A quick learner, team player, open-source
-aficionado. Always curious about the bleeding edge of technology and
-computer science developments, while being a practical person when it
-comes to choosing tools for work.
+Experienced developer with over 9 years of experience in various
+problem domains, with deep knowledge of Python and Clojure, experience
+with various RDBMS, NoSQL, distributed computing, messaging systems,
+cloud computing platforms, etc. A quick learner, team player,
+open-source aficionado. Always curious about the bleeding edge of
+technology and computer science developments, while being a practical
+person when it comes to choosing tools for work.
 
 \section{Education}
 Bachelor in Computer Science, National Technical University of Ukraine ``Kyiv Politechnical Institute'' \\
@@ -40,12 +40,43 @@ Bachelor in Computer Science, National Technical University of Ukraine ``Kyiv Po
 
 \section{Experience}
 
-{\bf Senior Data Engineer} TravelBird BV \hfill February 2015 --- present
+{\bf Senior Software Engineer} Blippar \hfill December 2015 --- present
 
-TravelBird is a travel startup focusing on delivering exciting travel
-packages every day. As part of BI team I'm taking part in helping the
-company make educated, data-based choices as opposed to relying on gut
-feeling.
+Blippar is a visual discovery app powered by augmented reality
+engine. As part of the platforms team I was responsible for building
+the backbone services behind the app.
+
+\begin{itemize} \itemsep -1pt
+\item Led successful implementation of backend of ad exchange system
+  by a team of 3. Delivered to production in 5 weeks from first commit
+  till public release. Written in Go, backed by MariaDB.
+\item Headed design and implementation of accounts system backend with
+  support for OAuth2 and OpenID Connect, while carefully deprecating
+  existing ad-hoc system. Proof of concept written in Flask, final
+  version written in Django.
+\item Took part in implementation of payments system, adding support
+  for Stripe. Helped refactor a big chunk of existing microservice
+  setup to enable smooth transition to paid user support.
+\end{itemize}
+
+{\bf Senior Data Engineer} TravelBird BV \hfill February 2015 --- November 2015
+
+TravelBird is a travel startup helping people find the most exciting
+vacation destinations. As part of BI team I'm responsible for
+engineer- and business-focused data collection and analysis.\\
+
+\begin{itemize} \itemsep -1pt
+\item Extracted A/B testing component from existing code-base into a
+  separate service, to enable cross-service A/B testing and unify
+  reporting. Powered by Flask, SQLAlchemy and PostgreSQL.
+\item Took part in design and development of event sourcing platform,
+  to enable data scientists with real-time data. Written from scratch
+  in Clojure, data was streamed to PostgreSQL initially, later on to
+  Amazon RedShift.
+\item Various maintenance tasks related to the functionality of
+  existing analytics setup, as well as communication with
+  non-technical teams on implementation of various A/B tests.
+\end{itemize}
 
 {\bf Software Engineer/Team Lead} Screen6 \hfill March 2013 --- February 2015
 
@@ -206,9 +237,12 @@ products.\\
 
 \section{Talks, Presentations and Code Sprints}
 
-Automated curated list can be seen on my \href{http://lanyrd.com/profile/mishok13/sessions/}{Lanyrd page}. The list below may be somewhat incomplete.
+Automated curated list can be seen on my
+\href{http://lanyrd.com/profile/mishok13/sessions/}{Lanyrd page}.  The
+list below may be somewhat incomplete.
 
 \begin{itemize}
+\item July 2016 --- Talk ``Taking a vacation from Python'' PyGrunn 2016
 \item July 2012 --- Talk ``Diving into Flask (Head On)'' at EuroPython 2012
 \item June 2011 --- Talk ``Making use of OpenStreetMap data with Python'' at EuroPython 2011
 \item March 2011 --- Tutorial ``Building your own tile server using OpenStreetMap'' at PyCon US 2011
